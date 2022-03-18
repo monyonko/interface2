@@ -1,0 +1,32 @@
+.partOne, .partTwo, .partThree{
+    display: flex;
+}
+.five, .six,.seven{
+    flex:1;
+    width: 20vw;
+    height: 10vh;
+    padding-top:2vh;
+}
+.eight img{
+    width: 50vw;
+    height: 50vh;
+
+}
+.nine, .ten, .eleven, .thirteen, .fourteen{
+    flex:1;
+}
+.partTwo img{
+    width: 28vw;
+    height:28vh;
+    padding: 3vh;
+}
+.twelve{
+    padding: 2vh;;
+}
+.partThree img{
+    width:40vw;
+    height:40vh;
+}
+.thirteen, .nine, .ten, .five, .six, .seven{
+    margin-right: 3vh;
+}

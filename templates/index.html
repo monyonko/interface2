@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Weather Station Admin Interface
+{% endblock %}
+{% block content %}
+        <div class="partOne">
+            <div class="five">
+                <p>Web Visits</p>
+                <button>50</button>
+            </div>
+            <div class="six">
+                <p>Online Users</p>
+                <button>50</button>
+            </div>
+            <div class="seven">
+                <p>Link shares</p>
+                <button>50</button>
+            </div>
+
+        </div>
+        <div class="eight">
+            <img src="{{url_for('static', filename='img/precipitation.PNG')}}" alt="">
+        </div>
+        <div class="partTwo">
+            <div class="nine">
+                <img src="{{url_for('static', filename='img/humidity.PNG')}}" alt="">
+            </div>
+            <div class="ten">
+                <img src="{{url_for('static', filename='img/windspeed.PNG')}}" alt="">
+            </div>
+            <div class="eleven">
+                <img src="{{url_for('static', filename='img/winddirection.PNG')}}" alt="">
+            </div>
+        </div>
+        <div class="twelve">
+            <img src="{{url_for('static', filename='img/precipitation.PNG')}}" alt="">
+        </div>
+        <div class="partThree">
+            <div class="thirteen">
+                <img src="{{url_for('static', filename='img/predictionModelComparison.PNG')}}" alt="">
+            </div>
+            <div class="fourteen">
+                <img src="{{url_for('static', filename='img/weatherForecast.PNG')}}" alt="">
+            </div>
+        </div>
+    
+    
+    
+{% endblock %}

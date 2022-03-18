@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.gridContainer {
+    display: grid;
+    column-gap: 1vh;
+    row-gap:1vw;
+    background-color: #fff;
+    color: black;
+    overflow: hidden;
+}
+  
+.gridContainer > div {
+text-align: center;
+border-radius: 2px;
+}
+.second{
+    grid-row: auto;
+    grid-column: span 6;
+    display: grid;
+    column-gap: 1vh;
+    row-gap:1vw;
+}
+.four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen{
+    background-color: #f1f1f1;
+}
+
+.one{
+    grid-column: span 1;
+    grid-row:span 2;
+}
+.one img{
+    width: 4vw ;
+    height: 4vw;
+    border-radius: 100%;
+    
+}
+.two{
+    grid-column: span 5;
+    grid-row: span 2;
+    padding-top: 1vh;
+
+   
+}
+.two form.search input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+
+}
+.two form.search button {
+    float: left;
+    width: 5%;
+    padding: 10px;
+    background: #807373;
+    color: white;
+    font-size: 17px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+background: #0b7dda;
+}
+
+form.example::after {
+content: "";
+clear: both;
+display: table;
+}
+.three{
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex; 
+}
+.three .fa-solid{
+    flex:1;
+    padding-top: 2vh;
+}
+.three i{
+    font-size: 20px;
+}
+.one, .two, .three{
+    background-color: #fff;
+}
+.four{
+    grid-row: auto;
+    min-width: 10vw;  
+}
+
+.four ul li{
+    grid-column: 2;
+    list-style: none;
+    text-align: justify; 
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #807373;
+    border-radius: 0.5vh;
+    margin: 2px;
+    padding-left:0;
+}
+.four ul li:hover{
+    background-color: #fff;
+}
+.four a{
+    text-decoration: none;
+    line-height: 5vh;
+    font-size: 3vh;
+    color: black;
+}
+
+.fifteen{
+    grid-row: span 6;
+    grid-column: span 8;
+    margin-bottom: 1vh;
+    
+}
+.fifteen table{
+    width: 90vw;
+    margin: auto;
+}
+.fifteen table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.copyright{
+ text-align: left;
+ padding-top: 0;
+ margin-top: 0;
+ background-color: #f1f1f1;
+ border-top: 1px solid black;
+} 

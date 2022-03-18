@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/county.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="one">
+            <img src="{{url_for('static', filename='img/logo.jpg')}}" alt="">
+        </div>
+        <div class="two">
+            <form action="" class="search">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+        <div class="three">
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="four">
+            <ul>
+                <li><a href="url_for('index')">Dashboard</a></li>
+                <li> <a href="url_for('about')">About</a> </li>
+                <li> <a href="url_for('contact')">Contact</a> </li>
+                <li><a href="url_for('settings')">Settings</a> </li>
+                <li><a href="url_for('help')">Help</a> </li>
+                <li><a href="url_for('county')">County</a> </li>
+                <li><a href="">Apps</a></li>
+                <li><a href="">Maps</a></li>
+                <li><a href="">Layouts</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Purchases</a></li>
+                <li><a href="">Aspects</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+    
+        </div>
+        <div class="second">
+            {%block content%}
+            {%endblock%}
+
+        </div>
+        <div class="fifteen">
+            <table>
+                <th>County</th>
+                <th>Temperature</th>
+                <th>Wind Speed</th>
+                <th>Wind Direction</th>
+                <th>Precipitation</th>
+                <th>Atmospheric Pressure</th>
+                <th>Humidity</th>
+                <tr>
+                    <td>Machakos</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kericho</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Wajir</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Moyale</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Karatina</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+            
+        </div>
+       
+    </div>
+   
+    <p class="copyright">cc</p>
+    
+</body>
+</html>
